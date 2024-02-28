@@ -1,53 +1,3 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-## Codeanywhere Template Instructions
-
-Welcome,
-
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
-
-You can safely delete the Codeanywhere Template Instructions section of this README.md file,  and modify the remaining paragraphs for your own project. Please do read the Codeanywhere Template Instructions at least once, though! It contains some important information about the IDE and the extensions we use. 
-
-## How to use this repo
-
-1. Use this template to create your GitHub project repo
-
-1. Log into <a href="https://app.codeanywhere.com/" target="_blank" rel="noreferrer">CodeAnywhere</a> with your GitHub account.
-
-1. On your Dashboard, click on the New Workspace button
-
-1. Paste in the URL you copied from GitHub earlier
-
-1. Click Create
-
-1. Wait for the workspace to open. This can take a few minutes.
-
-1. Open a new terminal and <code>pip3 install -r requirements.txt</code>
-
-1. In the terminal type <code>pip3 install jupyter</code>
-
-1. In the terminal type <code>jupyter notebook --NotebookApp.token='' --NotebookApp.password=''</code> to start the jupyter server.
-
-1. Open port 8888 preview or browser
-
-1. Open the jupyter_notebooks directory in the jupyter webpage that has opened and click on the notebook you want to open.
-
-1. Click the button Not Trusted and choose Trust.
-
-Note that the kernel says Python 3. It inherits from the workspace so it will be Python-3.8.12 as installed by our template. To confirm this you can use <code>! python --version</code> in a notebook code cell.
-
-
-## Cloud IDE Reminders
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
 
 ## Dataset Content
@@ -67,24 +17,72 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them).
+* Infected leaves are visually detected due to their powdery white layer on the surface of leaf.
 
+* Hypothesis is validated by collectin an image dataset from the client and creating an image montage for healthy and infected leaves.
+* Hypothesis is tested by average image analysis
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
-* List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
+### Business Requirement 1
+* Study should include analysis on:
+  * average images and variability images for each class (healthy or powdery mildew)
+  * the differences between average healthy and average powdery mildew cherry leaves
+  * an image montage for each class
+### Business Requirement 2
+* ML system needs to preredict wheather a cherry leaf is healthy or contains powdery mildew.
+* Dashboard should show features of showing an image montage and a prediction feature
 
 
 ## ML Business Case
-* In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
+In this section, we will look at individual elements of the case and justify how it is an ML business case.
 
+1. What are the business requirements?<br>
+   The client would like a tool to identify healthy cherry leaves from powdery mildew contained.
+   We understand that ML can be used to identify images and differentiate one from the other if a model has been trained to an acceptable accuracy level.
+
+2. Is there any business requirement that can be answered with conventional data analysis?<br>
+   The Requirement 1 can be solved using traditional data analysis methods. However, the second requirement can not be solved using traditional data analysis approaches therefore we would need an ML tool to tackle the challenge.
+
+3. Does the client need a dashboard or an API endpoint?<br>
+   The client needs a dashboard.
+
+4. Can you break down the project into Epics and User Stories?<br>
+   The project can be broken down into epics and stories. 
+
+5. Ethical or Privacy concerns?<br>
+   The client provided the data under an NDA (non-disclosure agreement), therefore the data should only be shared with professionals that are officially involved in the project. 
+
+6. What does the client consider a successful project outcome?<br>
+   The client can visually see and differentiate healthy leaves from powdery mildew-contained ones.
+   An image montage can be created that shows both types of leaves
+
+The client will also be able to predict if a leaf is healthy or contains powdery mildew by uploading images to the dashboard.
+
+7. What are the model's inputs and intended outputs?<br>
+   The input is a cherry leaf image and the output is a prediction of whether the cherry leaf is healthy or contains powdery mildew.
+
+8. Does the data suggest a particular model?<br>
+   The data suggest it is a binary classification model.
+
+9. What are the criteria for the performance goal of the predictions?<br>
+   An accuracy of 97% has been agreed with the client; however, the model has been trained to a 99% accuracy.
+
+10. How will the client benefit?<br>
+    The client will not supply the market with a compromised product. Furthermore, the client will also be able to scale up their operations in detecting mildew on other farms by minimising manual work.
 
 ## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
-* Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
+* A project summary page, showing the project dataset summary and the client's requirements.
+* A page listing your findings related to a study to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew
+* A page containing:
+* A link to download a set of cherry leaf images for live prediction (Kaggle repository).
+* A User Interface with a file uploader widget. The user should have the capacity to upload multiple images. For each image, it will display the image and a prediction statement, indicating if a cherry leaf is healthy or contains powdery mildew and the probability associated with this statement.
+* A table with the image name and prediction results, and a download button to download the table.
+* A page indicating your project hypothesis and how you validated it across the project.
+* A technical page displaying your model performance.
 
 
 ## Unfixed Bugs
-* You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+* 
 
 ## Deployment
 ### Heroku
@@ -102,19 +100,31 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 
 ## Main Data Analysis and Machine Learning Libraries
-* Here you should list the libraries used in the project and provide an example(s) of how you used these libraries.
+The following main libraries were used in the project
+- **numpy** It is a foundation for pandas and matploblib, both libraries have been built on it. It is used to convert the images into an array for analysis and ML training, calculating means and sd. 
+- **pandas** It is used to manipulate the dataset. For example, we used pandas dataframe to save an image prediction report.
+- **matplotlib** It is used to plot images such as augmented images and data images.
+- **seaborn** It is used to plot image datasets, especially with multiple axes and more features. For example, we used it to plot image montages.
+- **tensorflow** ML framework that is used to build, train, and validate the model
+- **streamlit** It is used to build the dashboard
+- **keras** It is used for image analysis such as augmentation and ML model training.
+
 
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and from where you got extra help. It is common practice to use code from other repositories and tutorials. However, it is necessary to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+- The code for data modelling, visualisation and ML model creation, training, and deployment has been taken from Code Institute lessons and walkthrough projects.
+- The dashboard and readme.md file has been built using the provided templates
+- The code for building pages and help with read me file was taken from [KhanRana](https://github.com/KhanRana/PP5-mildew-detection-in-cherry-leaves/).
+
+
 
 ### Content 
 
 - The text for the Home page was taken from Wikipedia Article A.
 - Instructions on how to implement form validation on the Sign-Up page were taken from [Specific YouTube Tutorial](https://www.youtube.com/).
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
+
 
 ### Media
 
@@ -124,4 +134,4 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 
 ## Acknowledgements (optional)
-* Thank the people that provided support throughout this project.
+* I would like to thank to my mentor for the support and help.
