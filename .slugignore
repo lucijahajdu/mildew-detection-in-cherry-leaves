@@ -2,3 +2,5 @@ inputs/cherry_dataset/cherry-leaves/test
 inputs/cherry_dataset/cherry-leaves/train
 inputs/cherry_dataset/cherry-leaves/validation
 jupyter_notebooks
+__pycache__
+venv
