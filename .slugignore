@@ -4,3 +4,6 @@ inputs/cherry_dataset/cherry-leaves/validation
 jupyter_notebooks
 __pycache__
 venv
+.github
+.devcontainer
+
