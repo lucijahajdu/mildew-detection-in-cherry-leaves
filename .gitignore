@@ -9,4 +9,6 @@ node_modules/
 cloudinary_python.txt
 kaggle.json
 venv
+inputs/cherry_dataset/cherry-leaves/test
+inputs/cherry_dataset/cherry-leaves/train
 .DS_Store

@@ -29,7 +29,7 @@ def summary_page():
     )
     st.write(
         f"* For additional information, please visit and **read** the "
-        f"[Project README file](https://github.com/KhanRana/PP5-mildew-detection-in-cherry-leaves#readme).")
+        f"[Project README file](https://github.com/lucijahajdu/mildew-detection-in-cherry-leaves/blob/main/README.md).")
 
     st.success(
         f"The project has 2 business requirements:\n"
