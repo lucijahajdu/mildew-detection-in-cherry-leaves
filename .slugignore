@@ -5,4 +5,15 @@ __pycache__
 venv
 .github
 .devcontainer
-
+core.Microsoft*
+core.mongo*
+core.python*
+env.py
+__pycache__/
+*.py[cod]
+node_modules/
+.github/
+cloudinary_python.txt
+kaggle.json
+venv
+.DS_Store
