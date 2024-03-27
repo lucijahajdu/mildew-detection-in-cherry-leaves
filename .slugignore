@@ -1,5 +1,6 @@
 inputs/cherry_dataset/cherry-leaves/test
 inputs/cherry_dataset/cherry-leaves/train
+inputs/cherry_dataset/cherry-leaves/validation
 jupyter_notebooks
 __pycache__
 venv
@@ -17,3 +18,10 @@ cloudinary_python.txt
 kaggle.json
 venv
 .DS_Store
+/app/outputs
+/app/venv
+/app/jupyter_notebooks
+/app/inputs
+/app/.devcontainer
+/app/app_pages
+/app/src
