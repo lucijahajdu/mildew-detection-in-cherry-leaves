@@ -25,3 +25,5 @@ venv
 /app/.devcontainer
 /app/app_pages
 /app/src
+/app/.devcontainer
+/app
