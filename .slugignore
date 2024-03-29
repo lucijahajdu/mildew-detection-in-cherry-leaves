@@ -14,4 +14,6 @@ cloudinary_python.txt
 kaggle.json
 venv
 .DS_Store
-outputs/
+outputs/v1
+__pycache__
+
