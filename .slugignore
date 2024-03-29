@@ -23,4 +23,5 @@ venv
 .DS_Store
 outputs/v1
 __pycache__
+*zip
 
