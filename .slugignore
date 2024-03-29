@@ -1,5 +1,7 @@
-inputs/cherry_dataset/cherry-leaves/test
-inputs/cherry_dataset/cherry-leaves/train
+inputs/cherry_dataset/cherry-leaves/test/*
+inputs/cherry_dataset/cherry-leaves/train/*
+inputs/cherry-leaves/healthy
+inputs/cherry-leaves/powdery_mildew
 inputs/cherry_dataset/cherry-leaves/validation
 jupyter_notebooks
 .github/ISSUE_TEMPLATE
@@ -7,6 +9,7 @@ jupyter_notebooks
 app_pages
 app.py
 src
+README.MD
 core.Microsoft*
 core.mongo*
 core.python*
