@@ -15,5 +15,4 @@ inputs/cherry_dataset/cherry-leaves/train
 jupyter_notebooks
 __pycache__
 venv
-.github
 .devcontainer
